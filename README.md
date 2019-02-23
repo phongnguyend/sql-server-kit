@@ -7,6 +7,9 @@
 6. [SQL Server Data Tools (SSDT) (Schema Compare, Data Compare, ...)](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-2017)
 7. [SentryOne Plan Explorer - SQL Server Query Tuning](https://www.sentryone.com/plan-explorer)
 
+### Hardware Identification:
+1. [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
+
 ### Disk Benchmarks:
 1. [CrystalDiskMark](http://crystalmark.info/en/software/crystaldiskmark/)
 2. [HD Tune Pro](https://www.hdtune.com/)
