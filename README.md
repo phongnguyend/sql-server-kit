@@ -6,3 +6,9 @@
 5. [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017)
 6. [SQL Server Data Tools (SSDT) (Schema Compare, Data Compare, ...)](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-2017)
 7. [SentryOne Plan Explorer - SQL Server Query Tuning](https://www.sentryone.com/plan-explorer)
+
+### Disk Benchmarks:
+1. [CrystalDiskMark](http://crystalmark.info/en/software/crystaldiskmark/)
+2. [HD Tune Pro](https://www.hdtune.com/)
+3. [ATTO Disk Benchmark](https://www.atto.com/disk-benchmark/)
+4. [DiskSpd](https://gallery.technet.microsoft.com/DiskSpd-A-Robust-Storage-6ef84e62)
