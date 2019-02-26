@@ -19,3 +19,7 @@
 ### CPU Benchmarks:
 1. [TPC Benchmarks](http://www.tpc.org/information/benchmarks.asp)
 2. [Geekbench](https://www.geekbench.com/)
+
+### Memory Benchmarks:
+1. [Geekbench](https://www.geekbench.com/)
+2. [SiSoftware Sandra](https://www.sisoftware.co.uk/benchmarking-101/)
