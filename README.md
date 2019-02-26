@@ -15,3 +15,7 @@
 2. [HD Tune Pro](https://www.hdtune.com/)
 3. [ATTO Disk Benchmark](https://www.atto.com/disk-benchmark/)
 4. [DiskSpd](https://gallery.technet.microsoft.com/DiskSpd-A-Robust-Storage-6ef84e62)
+
+### CPU Benchmarks:
+1. [TPC Benchmarks](http://www.tpc.org/information/benchmarks.asp)
+2. [Geekbench](https://www.geekbench.com/)
