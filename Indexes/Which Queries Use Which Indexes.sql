@@ -1,8 +1,9 @@
-declare @indexName nvarchar(255) = N'[IX_ABC_XYZ]'
+declare @indexName nvarchar(255) = N'[IndexName]'
 
 ;with xmlnamespaces ('http://schemas.microsoft.com/sqlserver/2004/07/showplan' as sp)
 select 
     n.value(N'@Index', N'sysname') as IndexName,
+	n.value(N'@Table', N'sysname') as TableName,
     replace(t.text, '**', '') as entire_query,
     substring (t.text,(s.statement_start_offset/2) + 1, 
             ((case when s.statement_end_offset = -1 then len(convert(nvarchar(max), t.text)) * 2
@@ -18,3 +19,4 @@ from
     cross apply query_plan.nodes('//sp:Object') as p1(n)
 where
     n.value(N'@Index', N'sysname') = @indexName
+	and n.value(N'@Table', N'sysname') = '[TableName]'
