@@ -87,4 +87,27 @@ GO
 ### 4. ERROR_LINE(), ERROR_MESSAGE(), ERROR_NUMBER(), ERROR_SEVERITY(), ERROR_PROCEDURE();
 ### 5. THROW
 ### 5. Transaction Handling and TRY CATCH
+```sql
+BEGIN TRY
+    BEGIN TRANSACTION;
+
+	DECLARE @x int = 1/1;
+	DECLARE @y int = 1/0;
+	
+    COMMIT TRANSACTION;
+	PRINT 'committed';
+END TRY
+BEGIN CATCH
+
+	-- Checking open transaction counts
+    IF @@TRANCOUNT <> 0
+	BEGIN 
+        ROLLBACK TRANSACTION;
+		PRINT 'rolled back';
+	END;
+
+    THROW;
+
+END CATCH
+```
 
