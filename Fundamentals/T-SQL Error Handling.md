@@ -1,5 +1,5 @@
 ### 1. RAISERROR
-```sql
+```plsql
 -- User-defined message using msg_str, severity level 16, state 1
 RAISERROR ('This is our user-defined error message, severity 16!', 
 		16, 1);
@@ -45,7 +45,7 @@ RAISERROR (@error_msg, 16, 1);
 GO
 ```
 ### 2. TRY CATCH
-```sql
+```SQL
 DECLARE @input int = 0
 BEGIN TRY
     IF @input < 0 
