@@ -109,7 +109,7 @@ BEGIN CATCH
 	THROW;
 END CATCH
 ```
-### 5. Transaction Handling and TRY CATCH
+### 6. Transaction Handling and TRY CATCH
 ```sql
 BEGIN TRY
 	BEGIN TRANSACTION;
