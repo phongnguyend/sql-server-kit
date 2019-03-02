@@ -46,16 +46,16 @@ GO
 ```
 ### 2. TRY CATCH
 ```SQL
-DECLARE @input int = 0
+DECLARE @input INT = 0
 BEGIN TRY
-    IF @input < 0 
-    BEGIN
-        RAISERROR('less than 0.', 16, 1);
-    END
+	IF @input < 0
+	BEGIN
+		RAISERROR ('less than 0.',16,1);
+	END
 	PRINT 'Passed';
 END TRY
-BEGIN CATCH  
-    RAISERROR ('Failed', 16, -1);
+BEGIN CATCH
+	RAISERROR ('Failed',16,- 1);
 END CATCH
 ```
 ### 3. @@ERROR
