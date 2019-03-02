@@ -4,8 +4,8 @@ Here are the different types of the JOINs in SQL:
 •	LEFT (OUTER) JOIN: Return all records from the left table, and the matched records from the right table
 •	RIGHT (OUTER) JOIN: Return all records from the right table, and the matched records from the left table
 •	FULL (OUTER) JOIN: Return all records when there is a match in either left or right table
-![alt text](https://github.com/phongnguyend/sql-scripts/blob/master/Fundamentals/T-SQL Data Retrieval/imgs/inner_join.gif)
-![alt text](https://github.com/phongnguyend/sql-scripts/blob/master/Fundamentals/T-SQL Data Retrieval/imgs/left_join.gif)
-![alt text](https://github.com/phongnguyend/sql-scripts/blob/master/Fundamentals/T-SQL Data Retrieval/imgs/right_join.gif)
-![alt text](https://github.com/phongnguyend/sql-scripts/blob/master/Fundamentals/T-SQL Data Retrieval/imgs/full_join.gif)
 
+![alt text](imgs/inner_join.gif)
+![alt text](imgs/left_join.gif)
+![alt text](imgs/right_join.gif)
+![alt text](imgs/full_join.gif)
