@@ -85,6 +85,20 @@ IF @Error > 0
 GO
 ```
 ### 4. ERROR_LINE(), ERROR_MESSAGE(), ERROR_NUMBER(), ERROR_SEVERITY(), ERROR_PROCEDURE();
+```sql
+BEGIN TRY
+	DECLARE @x INT = 1 / 1;
+	DECLARE @y INT = 1 / 0;
+END TRY
+
+BEGIN CATCH
+	SELECT ERROR_LINE() AS [Error_Line]
+		,ERROR_MESSAGE() AS [Error_Message]
+		,ERROR_NUMBER() AS [Error_Number]
+		,ERROR_SEVERITY() AS [Error_Severity]
+		,ERROR_PROCEDURE() AS [Error_Procedure];
+END CATCH
+```
 ### 5. THROW
 ### 5. Transaction Handling and TRY CATCH
 ```sql
