@@ -99,7 +99,7 @@ BEGIN CATCH
 END CATCH
 ```
 ### 5. THROW
-```
+```sql
 BEGIN TRY
 	DECLARE @x INT = 1 / 1;
 	--DECLARE @y INT = 1 / 0;
