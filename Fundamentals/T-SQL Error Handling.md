@@ -1,5 +1,5 @@
 ### 1. RAISERROR
-```
+```sql
 -- User-defined message using msg_str, severity level 16, state 1
 RAISERROR ('This is our user-defined error message, severity 16!', 
 		16, 1);
