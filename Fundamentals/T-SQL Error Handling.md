@@ -90,7 +90,6 @@ BEGIN TRY
 	DECLARE @x INT = 1 / 1;
 	DECLARE @y INT = 1 / 0;
 END TRY
-
 BEGIN CATCH
 	SELECT ERROR_LINE() AS [Error_Line]
 		,ERROR_MESSAGE() AS [Error_Message]
@@ -100,6 +99,16 @@ BEGIN CATCH
 END CATCH
 ```
 ### 5. THROW
+```
+BEGIN TRY
+	DECLARE @x INT = 1 / 1;
+	--DECLARE @y INT = 1 / 0;
+	THROW 50001, 'Test', 1;
+END TRY
+BEGIN CATCH
+	THROW;
+END CATCH
+```
 ### 5. Transaction Handling and TRY CATCH
 ```sql
 BEGIN TRY
@@ -109,16 +118,13 @@ BEGIN TRY
 	DECLARE @y INT = 1 / 0;
 
 	COMMIT TRANSACTION;
-
 	PRINT 'committed';
 END TRY
-
 BEGIN CATCH
 	-- Checking open transaction counts
 	IF @@TRANCOUNT <> 0
 	BEGIN
 		ROLLBACK TRANSACTION;
-
 		PRINT 'rolled back';
 	END;
 
