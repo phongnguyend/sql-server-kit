@@ -89,25 +89,26 @@ GO
 ### 5. Transaction Handling and TRY CATCH
 ```sql
 BEGIN TRY
-    BEGIN TRANSACTION;
+	BEGIN TRANSACTION;
 
-	DECLARE @x int = 1/1;
-	DECLARE @y int = 1/0;
-	
-    COMMIT TRANSACTION;
+	DECLARE @x INT = 1 / 1;
+	DECLARE @y INT = 1 / 0;
+
+	COMMIT TRANSACTION;
+
 	PRINT 'committed';
 END TRY
-BEGIN CATCH
 
+BEGIN CATCH
 	-- Checking open transaction counts
-    IF @@TRANCOUNT <> 0
-	BEGIN 
-        ROLLBACK TRANSACTION;
+	IF @@TRANCOUNT <> 0
+	BEGIN
+		ROLLBACK TRANSACTION;
+
 		PRINT 'rolled back';
 	END;
 
-    THROW;
-
+	THROW;
 END CATCH
 ```
 
