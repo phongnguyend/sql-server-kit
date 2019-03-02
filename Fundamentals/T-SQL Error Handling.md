@@ -1,0 +1,7 @@
+### 1. RAISERROR
+### 2. TRY CATCH
+### 3. @@ERROR
+### 4. ERROR_LINE(), ERROR_MESSAGE(), ERROR_NUMBER(), ERROR_SEVERITY(),ERROR_PROCEDURE();
+### 5. THROW
+### 5. Transaction Handling and TRY CATCH
+
