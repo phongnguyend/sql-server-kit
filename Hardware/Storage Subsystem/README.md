@@ -7,6 +7,4 @@
 
 ### Disk Benchmarks:
 1. [CrystalDiskMark](http://crystalmark.info/en/software/crystaldiskmark/)
-2. [HD Tune Pro](https://www.hdtune.com/)
-3. [ATTO Disk Benchmark](https://www.atto.com/disk-benchmark/)
-4. [DiskSpd](https://gallery.technet.microsoft.com/DiskSpd-A-Robust-Storage-6ef84e62)
+2. [DiskSpd](https://gallery.technet.microsoft.com/DiskSpd-A-Robust-Storage-6ef84e62)
