@@ -1,6 +1,6 @@
 ### Storage Subsystem Monitoring Tools:
 1. [Windows Performance Monitor](https://blogs.technet.microsoft.com/askperf/2014/07/17/windows-performance-monitor-overview/)
-2. [Windows Resource Monitor] (https://www.digitalcitizen.life/how-use-resource-monitor-windows-7)
+2. [Windows Resource Monitor](https://www.digitalcitizen.life/how-use-resource-monitor-windows-7)
 
 ### Hardware Identification:
 1. [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
