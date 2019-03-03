@@ -32,7 +32,7 @@ The specific number of IOPS possible in any system configuration will vary great
 - Put heavily accessed tables and the nonclustered indexes that belong to those tables on different filegroups. This will improve performance, because of parallel I/O if the files are located on different physical disks.
 - Do not put the transaction log file(s) on the same physical disk that has the other files and filegroups.
 - Place data and log files on separate drives.
-- Place tempdb and tempdb log file on separate drives as well.
+- Place tempdb and tempdb log files on separate drives as well.
 
 [Database Files and Filegroups](https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-files-and-filegroups?view=sql-server-2017)
 
