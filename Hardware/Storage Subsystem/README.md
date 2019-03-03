@@ -33,6 +33,7 @@ The specific number of IOPS possible in any system configuration will vary great
 - Do not put the transaction log file(s) on the same physical disk that has the other files and filegroups.
 - Place data and log files on separate drives.
 - Place tempdb and tempdb log files on separate drives as well.
+- Place tempdb and your database on separate drives.
 
 [Database Files and Filegroups](https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-files-and-filegroups?view=sql-server-2017)
 
