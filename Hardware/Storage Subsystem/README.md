@@ -25,3 +25,15 @@ The specific number of IOPS possible in any system configuration will vary great
 ### Monitoring Tools:
 1. [Windows Performance Monitor](https://blogs.technet.microsoft.com/askperf/2014/07/17/windows-performance-monitor-overview/)
 2. [Windows Resource Monitor](https://www.digitalcitizen.life/how-use-resource-monitor-windows-7)
+
+### Places to put tempdb, datas and log files recommendations:
+- To maximize performance, create files or filegroups on different available disks as possible. Put objects that compete heavily for space in different filegroups.
+- Put different tables used in the same join queries in different filegroups. This will improve performance, because of parallel disk I/O searching for joined data.
+- Put heavily accessed tables and the nonclustered indexes that belong to those tables on different filegroups. This will improve performance, because of parallel I/O if the files are located on different physical disks.
+- Do not put the transaction log file(s) on the same physical disk that has the other files and filegroups.
+- Place data and log files on separate drives.
+- Place tempdb and tempdb log file on separate drives as well.
+
+[Database Files and Filegroups](https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-files-and-filegroups?view=sql-server-2017)
+
+[Place Data and Log Files on Separate Drives](https://docs.microsoft.com/en-us/sql/relational-databases/policy-based-management/place-data-and-log-files-on-separate-drives?view=sql-server-2017)
