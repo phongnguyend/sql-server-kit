@@ -17,7 +17,7 @@ ON SERVER ADD EVENT sqlserver.sql_statement_completed (
 	WHERE 
 	(
 		[package0].[equal_boolean]([sqlserver].[is_system], (0))
-		AND [sqlserver].[equal_i_sql_unicode_string]([sqlserver].[database_name], N'FiscalRepsV2_UAT')
+		AND [sqlserver].[equal_i_sql_unicode_string]([sqlserver].[database_name], N'Your DB Name')
 		AND [sqlserver].[like_i_sql_unicode_string]([sqlserver].[sql_text], N'%UPDATE%SET%')
 		AND [sqlserver].[not_equal_i_sql_unicode_string]([sqlserver].[client_app_name], N'.Net SqlClient Data Provider')
 	)
