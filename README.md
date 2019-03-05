@@ -7,6 +7,7 @@
 6. [SQL Server Data Tools (SSDT) (Schema Compare, Data Compare, ...)](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-2017)
 7. [SentryOne Plan Explorer - SQL Server Query Tuning](https://www.sentryone.com/plan-explorer)
 8. [T-SQL Formatter](http://poorsql.com/)
+9. [dbForge SQL Server Event Profiler - Analyse SQL Trace Data](https://www.devart.com/dbforge/sql/event-profiler/)
 
 ### Hardware Identification:
 1. [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
