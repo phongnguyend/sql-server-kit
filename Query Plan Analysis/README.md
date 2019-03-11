@@ -26,3 +26,7 @@
 **6.** ![alt text](imgs/filter-32x.gif) **Filter** *(HAVING)*
 
 **7.** ![alt text](imgs/sort-32x.gif) **Sort** *(ORDER BY)*
+
+**8. Spools:**
+- ![alt text](imgs/spool-32x.gif) **Eager Spool**
+- ![alt text](imgs/spool-32x.gif) **Lazy Spool**
