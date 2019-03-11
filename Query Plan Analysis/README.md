@@ -21,22 +21,22 @@
 - ![alt text](imgs/merge-join-32x.gif) **Merge Join** 
 - ![alt text](imgs/hash-match-32x.gif) **Hash Match** 
 
-![alt text](imgs/stream-aggregate-32x.gif) **Stream Aggregate** *(GROUP BY)*
-
-![alt text](imgs/filter-32x.gif) **Filter** *(HAVING)*
-
-![alt text](imgs/sort-32x.gif) **Sort** *(ORDER BY)*
-
 **Spools:** *The **Spool** operator saves an intermediate query result to the **tempdb** database*.
 - ![alt text](imgs/spool-32x.gif) **Eager Spool**
 - ![alt text](imgs/spool-32x.gif) **Lazy Spool**
-
-![alt text](imgs/compute-scalar-32x.gif) **Compute Scalar**: *(function expression)*
 
 **Parallelism**:
 - ![alt text](imgs/parallelism-distribute-stream.gif) **Distribute Streams**
 - ![alt text](imgs/parallelism-repartition-stream.gif) **Repartition Streams**
 - ![alt text](imgs/parallelism-32x.gif) **Gather Streams**
 - ![alt text](imgs/bitmap-32x.gif) **Bitmap**
+
+![alt text](imgs/stream-aggregate-32x.gif) **Stream Aggregate** *(GROUP BY)*
+
+![alt text](imgs/filter-32x.gif) **Filter** *(HAVING)*
+
+![alt text](imgs/sort-32x.gif) **Sort** *(ORDER BY)*
+
+![alt text](imgs/compute-scalar-32x.gif) **Compute Scalar**: *(function expression)*
 
 ![alt text](imgs/concatenation-32x.gif) **Concatenation** *(UNION ALL)*
