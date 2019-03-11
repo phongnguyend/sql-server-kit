@@ -38,3 +38,5 @@
 - ![alt text](imgs/parallelism-repartition-stream.gif) **Repartition Streams**
 - ![alt text](imgs/parallelism-32x.gif) **Gather Streams**
 - ![alt text](imgs/bitmap-32x.gif) **Bitmap**
+
+**11. ![alt text](imgs/concatenation-32x.gif) Concatenation** *(UNION ALL)*
