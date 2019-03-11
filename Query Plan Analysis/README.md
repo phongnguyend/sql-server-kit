@@ -24,3 +24,5 @@
 **5.** ![alt text](imgs/stream-aggregate-32x.gif) **Stream Aggregate**
 
 **6.** ![alt text](imgs/filter-32x.gif) **Filter**
+
+**7.** ![alt text](imgs/sort-32x.gif) **Sort**
