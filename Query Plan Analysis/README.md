@@ -37,3 +37,4 @@
 - ![alt text](imgs/parallelism-distribute-stream.gif) **Distribute Streams**
 - ![alt text](imgs/parallelism-repartition-stream.gif) **Repartition Streams**
 - ![alt text](imgs/parallelism-32x.gif) **Gather Streams**
+- ![alt text](imgs/bitmap-32x.gif) **Bitmap**
