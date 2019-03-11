@@ -27,6 +27,6 @@
 
 **7.** ![alt text](imgs/sort-32x.gif) **Sort** *(ORDER BY)*
 
-**8. Spools:**
+**8. Spools:** *The **Spool** operator saves an intermediate query result to the **tempdb** database*.
 - ![alt text](imgs/spool-32x.gif) **Eager Spool**
 - ![alt text](imgs/spool-32x.gif) **Lazy Spool**
