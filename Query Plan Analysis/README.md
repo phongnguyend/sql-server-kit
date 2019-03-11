@@ -32,3 +32,8 @@
 - ![alt text](imgs/spool-32x.gif) **Lazy Spool**
 
 **9**.![alt text](imgs/compute-scalar-32x.gif) **Compute Scalar**: *(function expression)*
+
+**10. Parallelism**:
+- ![alt text](imgs/parallelism-distribute-stream.gif) Distribute Streams
+- ![alt text](imgs/parallelism-repartition-stream.gif) Repartition Streams
+- ![alt text](imgs/parallelism-32x.gif) Gather Streams
