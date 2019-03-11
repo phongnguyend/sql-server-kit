@@ -4,19 +4,19 @@
 ### Common Operators: [*link*](https://docs.microsoft.com/en-us/sql/relational-databases/showplan-logical-and-physical-operators-reference)
 
 **1. Scans**:
-- Table Scan
-- Clustered Index Scan
-- Index Scan
+- ![alt text](imgs/table-scan-32x.gif) **Table Scan**
+- ![alt text](imgs/clustered-index-scan-32x.gif) **Clustered Index Scan** 
+- ![alt text](imgs/nonclustered-index-scan-32x.gif) **Index Scan** 
 
 **2. Seeks**:
-- Clustered Index Seek
-- Index Seek
+- ![alt text](imgs/clustered-index-seek-32x.gif) **Clustered Index Seek** 
+- ![alt text](imgs/index-seek-32x.gif) **Index Seek** 
 
 **3. Lookups**:
-- Key Lookup
-- RID Lookup
+- ![alt text](imgs/bookmark-lookup-32x.gif) **Key Lookup** 
+- ![alt text](imgs/rid-nonclust-locate-32x.gif) **RID Lookup** 
 
 **4. Joins**:
-- Nested Loops
-- Merge Join
-- Hash Match
+- ![alt text](imgs/nested-loops-32x.gif) **Nested Loops** 
+- ![alt text](imgs/merge-join-32x.gif) **Merge Join** 
+- ![alt text](imgs/hash-match-32x.gif) **Hash Match** 
