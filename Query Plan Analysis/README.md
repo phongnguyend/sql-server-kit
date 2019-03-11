@@ -30,3 +30,5 @@
 **8. Spools:** *The **Spool** operator saves an intermediate query result to the **tempdb** database*.
 - ![alt text](imgs/spool-32x.gif) **Eager Spool**
 - ![alt text](imgs/spool-32x.gif) **Lazy Spool**
+
+**9**.![alt text](imgs/compute-scalar-32x.gif) **Compute Scalar**: *(function expression)*
