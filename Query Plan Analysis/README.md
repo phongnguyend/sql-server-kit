@@ -20,3 +20,7 @@
 - ![alt text](imgs/nested-loops-32x.gif) **Nested Loops** 
 - ![alt text](imgs/merge-join-32x.gif) **Merge Join** 
 - ![alt text](imgs/hash-match-32x.gif) **Hash Match** 
+
+**5.** ![alt text](imgs/stream-aggregate-32x.gif) **Stream Aggregate**
+
+**6.** ![alt text](imgs/filter-32x.gif) **Filter**
