@@ -21,8 +21,8 @@
 - ![alt text](imgs/merge-join-32x.gif) **Merge Join** 
 - ![alt text](imgs/hash-match-32x.gif) **Hash Match** 
 
-**5.** ![alt text](imgs/stream-aggregate-32x.gif) **Stream Aggregate**
+**5.** ![alt text](imgs/stream-aggregate-32x.gif) **Stream Aggregate** *(GROUP BY)*
 
-**6.** ![alt text](imgs/filter-32x.gif) **Filter**
+**6.** ![alt text](imgs/filter-32x.gif) **Filter** *(HAVING)*
 
-**7.** ![alt text](imgs/sort-32x.gif) **Sort**
+**7.** ![alt text](imgs/sort-32x.gif) **Sort** *(ORDER BY)*
