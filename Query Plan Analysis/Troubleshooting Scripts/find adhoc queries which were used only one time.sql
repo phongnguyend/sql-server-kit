@@ -15,7 +15,7 @@ ORDER BY cp.size_in_bytes DESC OPTION (RECOMPILE);
 -- Enabling forced parameterization for the database can help, but test first!
 
 
-
+-- Futher checking:
 -- https://www.sqlskills.com/blogs/kimberly/plan-cache-and-optimizing-for-adhoc-workloads/
 SELECT objtype AS [CacheType],
     COUNT_BIG(*) AS [Total Plans],
@@ -53,7 +53,7 @@ SELECT SUM(CASE
 FROM sys.dm_exec_cached_plans) T
 
            
--- check 'optimize for ad hoc workloads' flag
+-- Check 'optimize for ad hoc workloads' flag
 select * from sys.configurations
 where name = 'optimize for ad hoc workloads'
 
@@ -62,7 +62,7 @@ GO
 RECONFIGURE
 GO
 
--- enable 'optimize for ad hoc workloads' flag   
+-- Enable 'optimize for ad hoc workloads' flag   
 EXEC SP_CONFIGURE 'optimize for ad hoc workloads', 1
 GO
 RECONFIGURE
