@@ -16,7 +16,7 @@ SELECT
 FROM sys.dm_exec_cached_plans AS cp 
 CROSS APPLY sys.dm_exec_query_plan(plan_handle) AS qp 
 CROSS APPLY query_plan.nodes('/ShowPlanXML/BatchSequence/Batch/Statements/StmtSimple') AS x(stmt)
-CROSS APPLY stmt.nodes('//Convert[@Implicit="1"]') AS n(t) -- all implicit comparison
+CROSS APPLY stmt.nodes('//Convert[@Implicit="1"]') AS n(t) -- all implicit conversion 
 --CROSS APPLY stmt.nodes('//Predicate/ScalarOperator/Compare/ScalarOperator/Convert[@Implicit="1"]') AS n(t) -- implicit in predicate
 --CROSS APPLY stmt.nodes('//Predicate/ScalarOperator/Compare') AS n(t) -- normal comparison in predicate
 JOIN INFORMATION_SCHEMA.COLUMNS AS ic 
