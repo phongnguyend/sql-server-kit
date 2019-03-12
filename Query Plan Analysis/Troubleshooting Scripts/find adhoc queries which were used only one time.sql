@@ -53,7 +53,7 @@ SELECT SUM(CASE
 FROM sys.dm_exec_cached_plans) T
 
            
--- check the 'optimize for ad hoc workloads' flag
+-- check 'optimize for ad hoc workloads' flag
 select * from sys.configurations
 where name = 'optimize for ad hoc workloads'
 
@@ -62,6 +62,7 @@ GO
 RECONFIGURE
 GO
 
+-- enable 'optimize for ad hoc workloads' flag   
 EXEC SP_CONFIGURE 'optimize for ad hoc workloads', 1
 GO
 RECONFIGURE
