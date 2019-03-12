@@ -1,6 +1,9 @@
 ### Tools:
 [SentryOne Plan Explorer - SQL Server Query Tuning](https://www.sentryone.com/plan-explorer)
 
+### Query Tree:
+![alt text](imgs/query-tree.png)
+
 ### Common Operators: [*link*](https://docs.microsoft.com/en-us/sql/relational-databases/showplan-logical-and-physical-operators-reference)
 
 **Scans**:
