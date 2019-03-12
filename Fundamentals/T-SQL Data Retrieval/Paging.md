@@ -1,11 +1,13 @@
 ### SQL Server 2012:
 
 ```sql
-declare @currPage int = 2,-- trang hiện tại
-@recodperpage int = 20;-- số dòng trên 1 trang
+DECLARE @currPage INT = 2,
+	@recodperpage INT = 20;
 
-select *, COUNT(*) OVER () as TotalRecords from [TenBang]
-order by [TenCot]
-OFFSET (@currPage - 1)*@recodperpage ROWS
+SELECT *
+	, COUNT(*) OVER () AS TotalRecords
+FROM [TenBang]
+ORDER BY [TenCot] 
+OFFSET(@currPage - 1) * @recodperpage ROWS
 FETCH NEXT @recodperpage ROWS ONLY
 ```
