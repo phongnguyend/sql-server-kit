@@ -27,9 +27,9 @@
 - ![alt text](imgs/rid-nonclust-locate-32x.gif) **RID Lookup** 
 
 **Joins**:
-- ![alt text](imgs/nested-loops-32x.gif) **Nested Loops** 
+- ![alt text](imgs/nested-loops-32x.gif) **Nested Loops** *(HINT: LOOP JOIN)*
 - ![alt text](imgs/merge-join-32x.gif) **Merge Join** 
-- ![alt text](imgs/hash-match-32x.gif) **Hash Match** 
+- ![alt text](imgs/hash-match-32x.gif) **Hash Match** *(HINT: HASH JOIN)*
 
 **Spools:** *The **Spool** operator saves an intermediate query result to the **tempdb** database*.
 - ![alt text](imgs/spool-32x.gif) **Eager Spool**
