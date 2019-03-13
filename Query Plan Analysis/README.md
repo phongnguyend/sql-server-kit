@@ -2,9 +2,9 @@
 [SentryOne Plan Explorer - SQL Server Query Tuning](https://www.sentryone.com/plan-explorer)
 
 ### DMVs:
-- sys.dm_exec_procedure_stats
 - sys.dm_exec_cached_plans
 - sys.dm_exec_query_stats
+- sys.dm_exec_procedure_stats
 - sys.dm_exec_query_plan
 - sys.dm_exec_sql_text
 
