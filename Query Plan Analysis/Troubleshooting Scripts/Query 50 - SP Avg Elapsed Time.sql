@@ -1,6 +1,9 @@
 -- Top Cached SPs By Avg Elapsed Time (SQL Server 2014)  (Query 50) (SP Avg Elapsed Time)
 SELECT TOP(25) p.name AS [SP Name], qs.total_elapsed_time/qs.execution_count AS [avg_elapsed_time], 
-qs.total_elapsed_time, qs.execution_count, ISNULL(qs.execution_count/DATEDIFF(Minute, qs.cached_time, 
+qs.total_elapsed_time/qs.execution_count/cast(1000000 as float) AS [avg_elapsed_time_seconds], 
+qs.total_elapsed_time,
+qs.total_elapsed_time/cast(1000000 as float) AS [total_elapsed_time_seconds],
+qs.execution_count, ISNULL(qs.execution_count/DATEDIFF(Minute, qs.cached_time, 
 GETDATE()), 0) AS [Calls/Minute], qs.total_worker_time/qs.execution_count AS [AvgWorkerTime], 
 qs.total_worker_time AS [TotalWorkerTime], qs.cached_time
 FROM sys.procedures AS p WITH (NOLOCK)
