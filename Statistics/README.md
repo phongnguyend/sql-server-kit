@@ -42,3 +42,14 @@ UPDATE STATISTICS [table_name] ([statistics_name])
 WITH FULLSCAN;
 GO
 ```
+
+```sql
+UPDATE STATISTICS [table_name]
+WITH FULLSCAN;
+GO
+```
+
+```sql
+EXEC sp_MSForEachTable 'UPDATE STATISTICS ? WITH FULLSCAN;'
+GO
+```
