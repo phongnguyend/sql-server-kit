@@ -21,7 +21,8 @@ SELECT  object_name([object_id]) AS [object_name],
         [stats_id],
         [auto_created],
         [user_created],
-        [no_recompute]
+        [no_recompute],
+	STATS_DATE(object_id, stats_id) AS [stats_date]
 FROM    sys.[stats] AS s
 WHERE object_name([object_id]) = 'table_name';
 GO
