@@ -36,3 +36,9 @@ GO
 DBCC SHOW_STATISTICS([table_name], [statistics_name])
 GO
 ```
+
+```sql
+UPDATE STATISTICS [table_name] ([statistics_name]) 
+WITH FULLSCAN;
+GO
+```
