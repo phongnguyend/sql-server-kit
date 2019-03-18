@@ -37,4 +37,3 @@ select * from  sys.dm_exec_query_plan (0x05000900784D910410577123010000000100000
 
 */
 
-
