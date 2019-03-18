@@ -1,3 +1,8 @@
+### What's new:
+[What's new in SQL Server 2017](https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2017)
+
+[What's new in SQL Server 2016](https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2016)
+
 ### Database Management Tools:
 1. [SQL Search](https://www.red-gate.com/products/sql-development/sql-search/)
 2. [SQL Code Guard](https://www.red-gate.com/products/sql-development/sql-code-guard/)
