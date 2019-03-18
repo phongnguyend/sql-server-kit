@@ -21,6 +21,7 @@ SELECT TOP (100)
 	,qs.total_elapsed_time / qs.execution_count / cast(1000000 AS FLOAT) AS [avg_elapsed_time_seconds]
 	,total_worker_time
 	,total_logical_reads
+	,qs.plan_handle
 	--,qp.query_plan
 FROM sys.dm_exec_query_stats AS qs WITH (NOLOCK)
 CROSS APPLY sys.dm_exec_sql_text(qs.sql_handle) AS qt
@@ -28,3 +29,8 @@ CROSS APPLY sys.dm_exec_sql_text(qs.sql_handle) AS qt
 WHERE qt.dbid = DB_ID()
 ORDER BY qs.execution_count DESC
 OPTION (RECOMPILE);
+		
+		
+/*
+select * from  sys.dm_exec_query_plan (0x05000900784D9104105771230100000001000000000000000000000000000000000000000000000000000000)
+*/
