@@ -26,3 +26,9 @@ GO
 
 ### Examining Waits:
 [*open link*](ExaminingWaits.sql)
+
+### Examining Latches:
+[*open link*](ExaminingLatches.sql)
+
+### Examining Spinlocks:
+[*open link*](ExaminingSpinlocks.sql)
