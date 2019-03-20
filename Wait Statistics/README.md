@@ -20,3 +20,9 @@ GROUP BY [ot].[scheduler_id], [task_state]
 ORDER BY [task_state], [ot].[scheduler_id];
 GO
 ```
+
+### Examining Waiting Tasks:
+[*open link*](ExaminingWaitingTasks.sql)
+
+### Examining Waits:
+[*open link*](ExaminingWaits.sql)
