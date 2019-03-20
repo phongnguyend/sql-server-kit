@@ -17,3 +17,8 @@ SELECT name, database_id, create_date, compatibility_level
 FROM sys.databases
 ```
 
+**View Query Plan:**
+```sql
+select * 
+from sys.dm_exec_query_plan (paste plan_handle here)
+```
