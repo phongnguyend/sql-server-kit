@@ -24,7 +24,7 @@
 - For example, for a server with four physical processor cores, with hyper-threading enabled, there will be eight user schedulers
 ![alt text](imgs/schedulers.png)
 
-### Examining Schedulers:
+- **Examining Schedulers:**
 ```sql
 SELECT * FROM sys.dm_os_schedulers;
 GO
