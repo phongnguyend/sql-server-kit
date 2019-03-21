@@ -3,8 +3,8 @@
 ###  What does it mean: 
 - Waiting for a data file page to be read from disk into memory 
 - Common modes to see are SH and EX 
- + -- SH mode means the page will be read 
- + -- EX mode means the page will be changed 
+  + SH mode means the page will be read 
+  + EX mode means the page will be changed 
 ### Avoid knee-jerk response: 
 - Do not assume the I/O subsystem or I/O path is the problem 
 ### Further analysis: 
