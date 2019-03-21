@@ -43,3 +43,21 @@ GROUP BY [W1].[RowNum], [W1].[wait_type], [W1].[WaitS],
 	[W1].[ResourceS], [W1].[SignalS], [W1].[WaitCount], [W1].[Percentage]
 HAVING SUM ([W2].[Percentage]) - [W1].[Percentage] < 95; -- percentage threshold
 GO
+
+/*
+
+Wait Types Explanation:
+
+- CXPACKET:
+  + Parallel operations are taking place
+  + Accumulating very fast implies skewed work distribution amongst threads or one of the workers is being blocked by something
+  + Correlation with PAGEIOLATCH_SH waits? Implies large scans
+
+- PAGEIOLATCH_XX:
+  + Waiting for a data file page to be read from disk into memory
+  + Common modes to see are SH and EX
+    - SH mode means the page will be read
+    - EX mode means the page will be changed
+  + Correlate with CXPACKET waits, suggesting parallel scans
+ 
+*/
