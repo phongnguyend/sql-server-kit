@@ -91,6 +91,8 @@ GO
   + Time spent on the Runnable Queue with state RUNNABLE
 - Wait time = resource wait time + signal wait time
 
+![alt text](imgs/wait_times_definition.png)
+
 ## Examining Tasks:
 ```sql
 SELECT
