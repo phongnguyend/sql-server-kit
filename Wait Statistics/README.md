@@ -14,14 +14,14 @@
 ### When SQL Server has to call out to the OS, it must switch the calling thread to preemptive mode so the OS can interrupt it if necessary
 
 ## Components of a Scheduler
-### All schedulers are composed of three "parts"
+- All schedulers are composed of three "parts"
 ![alt text](imgs/scheduler_components.png)
-### Threads transition around these parts until their work is complete
+- Threads transition around these parts until their work is complete
 
 ## Schedulers in SQL Server
-### One scheduler per logical or physical processor core
-- Plus some extra ones for internal tasks and the Dedicated Admin Connection
-### For example, for a server with four physical processor cores, with hyper-threading enabled, there will be eight user schedulers
+- One scheduler per logical or physical processor core
+  + Plus some extra ones for internal tasks and the Dedicated Admin Connection
+- For example, for a server with four physical processor cores, with hyper-threading enabled, there will be eight user schedulers
 ![alt text](imgs/schedulers.png)
 
 ## Thread States
