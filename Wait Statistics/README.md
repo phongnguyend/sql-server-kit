@@ -24,6 +24,12 @@
 - For example, for a server with four physical processor cores, with hyper-threading enabled, there will be eight user schedulers
 ![alt text](imgs/schedulers.png)
 
+### Examining Schedulers:
+```sql
+SELECT * FROM sys.dm_os_schedulers;
+GO
+```
+
 ## Thread States
 - A thread can be in one of three states when being actively used as part of processing a query
 - RUNNING
@@ -33,12 +39,6 @@
 - RUNNABLE
   + The thread is currently on the Runnable Queue waiting to execute on the processor
 - Threads transition between these states until their work is complete
-
-### Examining Schedulers:
-```sql
-SELECT * FROM sys.dm_os_schedulers;
-GO
-```
 
 ### Examining Tasks:
 ```sql
