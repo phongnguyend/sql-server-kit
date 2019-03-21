@@ -1,5 +1,19 @@
 [SQL Server: Performance Troubleshooting Using Wait Statistics | Pluralsight](https://www.pluralsight.com/courses/sqlserver-waits)
 
+## Thread Scheduling
+### SQL Server performs its own thread scheduling 
+- Called non-preemptive scheduling 
+- More efficient (for SQL Server) than relying on Windows scheduling 
+- Performed by the SQLOS layer of the Storage Engine 
+ 
+### Each processor core (whether logical or physical) has a scheduler 
+- A scheduler is responsible for managing the execution of work by threads 
+- Schedulers exist for user threads and for internal operations 
+- Use the sys.dm_os_schedulers DMV to view schedulers 
+ 
+### When SQL Server has to call out to the OS, it must switch the calling thread to preemptive mode so the OS can interrupt it if necessary 
+- More information on this in Module 5
+
 ### Examining Schedulers:
 ```sql
 SELECT * FROM sys.dm_os_schedulers;
