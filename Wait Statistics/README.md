@@ -40,7 +40,46 @@ GO
   + The thread is currently on the Runnable Queue waiting to execute on the processor
 - Threads transition between these states until their work is complete
 
-### Examining Tasks:
+## Transition from RUNNING to SUSPENDED
+- A thread continues executing on the processor until it must wait for a resource to become available
+  + The thread’s state changes from RUNNING to SUSPENDED
+  + The thread moves to the Waiter List
+  + This process is called being ‘suspended’
+
+## The Waiter List
+- The Waiter List is an unordered list of threads that are suspended
+- Any thread can be notified at any time that the resource it is waiting for is now available
+  + Again, absolutely no ordering
+- There is no limit to how long a thread remains on the waiter list
+  + Although execution timeouts or lock timeouts may take effect
+- There is no practical limit to how many threads can be on a scheduler’s waiter list at any time
+- The sys.dm_os_waiting_tasks DMV shows which threads are currently waiting and what they are waiting for
+
+## Special Case: Quantum Exhaustion
+- If a thread does not need to wait for a resource, it will continue executing until its quantum is exhausted
+  + Thread quantum is fixed at 4 milliseconds and cannot be changed
+- If this occurs the thread moves to the bottom of the Runnable Queue
+  + The thread’s state changes from RUNNING to RUNNABLE
+  
+## Transition from SUSPENDED to RUNNABLE
+- A thread continues to wait until it is told that the resource is available
+  + The thread’s state changes from SUSPENDED to RUNNABLE
+  + The thread moves to the bottom of the Runnable Queue
+  + This process is called being ‘signaled’
+
+## The Runnable Queue
+- The Runnable Queue is a strict First-In-First-Out (FIFO) queue
+  + There is a special case that will be discussed on the next slide
+- Threads enter the queue at the bottom and progress to the top
+- The thread at the top of the queue is the one that will execute on the processor when the processor becomes free
+  + When the currently executing thread is suspended or exhausts its quantum
+- The size of the Runnable Queue can be seen from the runnable_tasks_count column in sys.dm_os_schedulers
+
+## Transition from RUNNABLE to RUNNING
+- The thread waits on the Runnable Queue until it reaches the top and the processor becomes available
+  + The thread’s state changes from RUNNABLE to RUNNING
+
+## Examining Tasks:
 ```sql
 SELECT
 	 [ot].[scheduler_id]
@@ -55,14 +94,14 @@ ORDER BY [task_state], [ot].[scheduler_id];
 GO
 ```
 
-### Examining Waiting Tasks:
+## Examining Waiting Tasks:
 [*open link*](ExaminingWaitingTasks.sql)
 
-### Examining Waits:
+## Examining Waits:
 [*open link*](ExaminingWaits.sql)
 
-### Examining Latches:
+## Examining Latches:
 [*open link*](ExaminingLatches.sql)
 
-### Examining Spinlocks:
+## Examining Spinlocks:
 [*open link*](ExaminingSpinlocks.sql)
