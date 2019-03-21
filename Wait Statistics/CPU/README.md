@@ -1,4 +1,4 @@
-## CXPACKET Wait Explanation
+## CXPACKET Wait
 ### What does it mean:
 - Parallel operations are taking place
 - Accumulating very fast implies skewed work distribution amongst threads or one of the workers is being blocked by something
@@ -12,7 +12,6 @@
 - Examine query plans of requests that are accruing CXPACKET waits to see if the query plans make sense for the query being performed
 - What is the wait type of the parallel thread that is taking too long? (i.e. the thread that does not have CXPACKET as its wait type)
 
-## CXPACKET Wait Solutions
 ### Possible root-causes:
 - Just parallelism occurring
 - Table scans being performed because of missing nonclustered indexes or incorrect query plan
