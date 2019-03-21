@@ -14,8 +14,7 @@
 - Examine query plans for parallel scans 
 - Examine query plans for implicit conversions 
 - Investigate buffer pool memory pressure and Page Life Expectancy
-
-## PAGEIOLATCH_XX Wait Solutions 
+### Solutions 
 - Create appropriate nonclustered indexes to reduce scans 
 - Update statistics to allow efficient query plans 
 - Move the affected data files to faster I/O subsystem 
