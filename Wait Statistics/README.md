@@ -69,7 +69,7 @@ GO
 
 ## The Runnable Queue
 - The Runnable Queue is a strict First-In-First-Out (FIFO) queue
-  + There is a special case that will be discussed on the next slide
+  + There is a special case when using Resource Governor
 - Threads enter the queue at the bottom and progress to the top
 - The thread at the top of the queue is the one that will execute on the processor when the processor becomes free
   + When the currently executing thread is suspended or exhausts its quantum
