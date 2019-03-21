@@ -78,6 +78,18 @@ GO
 ## Transition from RUNNABLE to RUNNING
 - The thread waits on the Runnable Queue until it reaches the top and the processor becomes available
   + The thread’s state changes from RUNNABLE to RUNNING
+  
+## Wait Times Definition
+- Total time spent waiting:
+  + Known as 'wait time'
+  + Time spent transitioning from RUNNING, through SUSPENDED, to RUNNABLE, and back to RUNNING
+- Time spent waiting for the resource to be available:
+  + Known as 'resource wait time'
+  + Time spent on the Waiter List with state SUSPENDED
+- Time spent waiting to get the processor after resource is available:
+  + Known as 'signal wait time'
+  + Time spent on the Runnable Queue with state RUNNABLE
+- Wait time = resource wait time + signal wait time
 
 ## Examining Tasks:
 ```sql
