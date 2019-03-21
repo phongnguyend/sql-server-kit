@@ -59,5 +59,11 @@ Wait Types Explanation:
     - SH mode means the page will be read
     - EX mode means the page will be changed
   + Correlate with CXPACKET waits, suggesting parallel scans
+
+- ASYNC_NETWORK_IO:
+  + SQL Server is waiting for a client to acknowledge receipt of sent data
+  + Analyze client application code. Nearly always a poorly-coded application that is processing results one
+    record at a time (RBAR = Row-By-Agonizing-Row)
+  + Analyze network latencies
  
 */
