@@ -11,8 +11,7 @@
 - Schedulers exist for user threads and for internal operations 
 - Use the sys.dm_os_schedulers DMV to view schedulers 
  
-### When SQL Server has to call out to the OS, it must switch the calling thread to preemptive mode so the OS can interrupt it if necessary 
-- More information on this in Module 5
+### When SQL Server has to call out to the OS, it must switch the calling thread to preemptive mode so the OS can interrupt it if necessary
 
 ## Components of a Scheduler
 ### All schedulers are composed of three "parts"
