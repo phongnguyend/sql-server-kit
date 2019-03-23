@@ -1,5 +1,6 @@
 SELECT TOP (25) 
-	 p.NAME AS [SP Name]
+	 DB_NAME(qs.database_id) AS [DB Name]
+	,p.NAME AS [SP Name]
 	,qs.execution_count
 	,qs.cached_time
 	-- Elapsed Time
