@@ -1,5 +1,5 @@
 SELECT TOP (100)
-	OBJECT_NAME(qt.objectid, qt.dbid) AS [ProcedureName]
+	 OBJECT_NAME(qt.objectid, qt.dbid) AS [ProcedureName]
 	,SUBSTRING(qt.TEXT, qs.statement_start_offset / 2 + 1, (
 			CASE 
 				WHEN qs.statement_end_offset = - 1
