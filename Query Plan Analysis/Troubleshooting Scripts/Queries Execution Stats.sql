@@ -55,3 +55,21 @@ OPTION (RECOMPILE);
 /*
 select * from  sys.dm_exec_query_plan (0x05000900784D9104105771230100000001000000000000000000000000000000000000000000000000000000)
 */
+
+
+/*
+
+Trouble Shooting Scenarios:
+
+ - WHERE: AND (qs.max_elapsed_time > 28000000) -- identify potential timeout statements.
+ - WHERE: AND (qs.total_worker_time > qs.total_elapsed_time) -- identify potential parallel statements
+
+ - ORDER BY qs.execution_count DESC -- statements are called the most often
+ - ORDER BY [avg_elapsed_time_seconds] DESC -- long-running statements
+ - ORDER BY [avg_worker_time_seconds] DESC -- the most expensive statements from a CPU perspective
+ - ORDER BY [avg_logical_reads] DESC -- the most expensive statements from a memory perspective 
+ - ORDER BY [avg_physical_reads] DESC -- the most expensive statements from a read I/O perspective
+ - ORDER BY [avg_logical_writes] DESC -- the most expensive statements from a write I/O perspective
+ - ORDER BY [Avg IO] DESC -- the most expensive statements from I/O perspective
+ 
+*/
