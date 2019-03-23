@@ -1,6 +1,8 @@
 SELECT TOP (100)
 	 DB_NAME(qt.dbid) AS [DB Name]
 	,OBJECT_NAME(qt.objectid, qt.dbid) AS [ProcedureName]
+	,cp.objtype
+	,cp.cacheobjtype
 	,SUBSTRING(qt.TEXT, qs.statement_start_offset / 2 + 1, (
 			CASE 
 				WHEN qs.statement_end_offset = - 1
@@ -47,6 +49,7 @@ SELECT TOP (100)
 	,(qs.total_logical_reads + qs.total_logical_writes) / qs.execution_count AS [Avg IO]
 	,qs.plan_handle
 FROM sys.dm_exec_query_stats AS qs WITH (NOLOCK)
+JOIN sys.dm_exec_cached_plans cp ON qs.plan_handle = cp.plan_handle
 CROSS APPLY sys.dm_exec_sql_text(qs.plan_handle) AS qt
 WHERE qt.dbid = DB_ID()
 ORDER BY [avg_elapsed_time_seconds] DESC
