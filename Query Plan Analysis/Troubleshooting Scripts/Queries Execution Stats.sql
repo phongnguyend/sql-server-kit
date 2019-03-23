@@ -47,9 +47,9 @@ SELECT TOP (100)
 	,(qs.total_logical_reads + qs.total_logical_writes) / qs.execution_count AS [Avg IO]
 	,qs.plan_handle
 FROM sys.dm_exec_query_stats AS qs WITH (NOLOCK)
-CROSS APPLY sys.dm_exec_sql_text(qs.sql_handle) AS qt
+CROSS APPLY sys.dm_exec_sql_text(qs.plan_handle) AS qt
 WHERE qt.dbid = DB_ID()
-ORDER BY qs.execution_count DESC
+ORDER BY [avg_elapsed_time_seconds] DESC
 OPTION (RECOMPILE);
 
 		
