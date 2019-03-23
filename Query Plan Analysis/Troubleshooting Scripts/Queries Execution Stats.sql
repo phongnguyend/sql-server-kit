@@ -1,8 +1,8 @@
 SELECT TOP (100)
 	 DB_NAME(qt.dbid) AS [DB Name]
-	,OBJECT_NAME(qt.objectid, qt.dbid) AS [ProcedureName]
-	,cp.objtype
-	,cp.cacheobjtype
+	,OBJECT_NAME(qt.objectid, qt.dbid) AS [Procedure Name]
+	,cp.objtype AS [Query Type]
+	,cp.cacheobjtype AS [Cache Type]
 	,SUBSTRING(qt.TEXT, qs.statement_start_offset / 2 + 1, (
 			CASE 
 				WHEN qs.statement_end_offset = - 1
