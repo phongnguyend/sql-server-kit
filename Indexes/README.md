@@ -5,6 +5,7 @@ SELECT tb.name AS TableName
 	,idx.type_desc AS IndexType
 	,cl.name AS ColumnName
 	,type.name AS ColumnType
+	,cl.is_identity IsIdentity
 	,dct.DEFINITION AS DefaultConstraint
 	,idx.is_primary_key AS IsPrimaryKey
 FROM sys.indexes idx
