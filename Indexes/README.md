@@ -21,3 +21,28 @@ WHERE idx.type_desc = 'CLUSTERED'
 ORDER BY TableName
 OPTION (RECOMPILE);
 ```
+### Review HEAP Tables:
+```sql
+SELECT o.name AS TableName
+	,i.type_desc AS IndexType
+	,o.create_date AS CreateDate
+FROM sys.indexes i
+INNER JOIN sys.objects o ON i.object_id = o.object_id
+WHERE i.type_desc = 'HEAP'
+	AND o.type_desc = 'USER_TABLE'
+ORDER BY o.name
+GO
+```
+
+### Review all HEAP:
+```sql
+SELECT o.name AS ObjectName
+	,i.type_desc AS IndexType
+	,o.type_desc AS ObjectType
+	,o.create_date AS CreateDate
+FROM sys.indexes i
+INNER JOIN sys.objects o ON i.object_id = o.object_id
+WHERE i.type_desc = 'HEAP'
+ORDER BY o.name
+GO
+```
