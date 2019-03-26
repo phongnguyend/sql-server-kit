@@ -1,4 +1,4 @@
-### Clustered Indexes:
+### Review Clustered Indexes:
 ```sql
 SELECT tb.name AS TableName
 	,idx.name AS IndexName
