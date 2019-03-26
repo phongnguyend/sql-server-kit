@@ -31,6 +31,7 @@ INNER JOIN sys.objects o ON i.object_id = o.object_id
 WHERE i.type_desc = 'HEAP'
 	AND o.type_desc = 'USER_TABLE'
 ORDER BY o.name
+OPTION (RECOMPILE);
 GO
 ```
 
@@ -44,5 +45,6 @@ FROM sys.indexes i
 INNER JOIN sys.objects o ON i.object_id = o.object_id
 WHERE i.type_desc = 'HEAP'
 ORDER BY o.name
+OPTION (RECOMPILE);
 GO
 ```
