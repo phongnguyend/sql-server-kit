@@ -45,3 +45,19 @@ public class StackTraceInterceptor : DbCommandInterceptor
     }
 }
 ```
+
+```c#
+public static void Main(string[] args)
+{
+    StackTraceInterceptor.Initialize();
+	....
+}
+```
+
+```c#
+protected void Application_Start()
+{
+    StackTraceInterceptor.Initialize();
+	....
+}
+```
