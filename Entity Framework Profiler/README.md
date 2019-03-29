@@ -3,10 +3,13 @@ public class StackTraceInterceptor : DbCommandInterceptor
 {
     public static void Initialize()
     {
-        var includedNameSpace = "YourNameSpace.";
-        DbInterception.Add(new StackTraceInterceptor(includedNameSpace));
+        if (ConfigurationManager.AppSettings["Tracing.EnableStackTraceInterceptor"] == "true")
+        {
+            var includedNameSpace = "YourNameSpace.";
+            DbInterception.Add(new StackTraceInterceptor(includedNameSpace));
+        }
     }
-
+    
     private string _includedNameSpace;
 
     public StackTraceInterceptor(string includedNameSpace)
