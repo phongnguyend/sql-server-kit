@@ -34,15 +34,18 @@ public class StackTraceInterceptor : DbCommandInterceptor
 
     private string AddStackTrace(string query)
     {
-        Stopwatch watch = new Stopwatch();
-        watch.Start();
+        bool SELECT_WITHOUT_WHERE = query.Contains("SELECT") && !query.Contains("WHERE");
+        bool WHERE_XX_IN_XX = query.Contains("SELECT") && query.Contains("WHERE") && query.Contains(" IN (");
+
+        bool needToAddStackTrace = SELECT_WITHOUT_WHERE || WHERE_XX_IN_XX;
+
+        if (!needToAddStackTrace)
+            return query;
 
         var stackTrace = string.Join("\n", Environment.StackTrace.Split('\n')
             .Where(line => !line.Contains(".StackTraceInterceptor."))
             .Where(line => string.IsNullOrWhiteSpace(_includedNameSpace) || line.Contains(_includedNameSpace))
             .Select(x => "-- " + x));
-
-        watch.Stop();
 
         return query += Environment.NewLine + stackTrace + Environment.NewLine;
     }
