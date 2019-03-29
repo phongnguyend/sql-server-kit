@@ -42,6 +42,7 @@ INNER JOIN [Waits] AS [W2]
 GROUP BY [W1].[RowNum], [W1].[wait_type], [W1].[WaitS], 
 	[W1].[ResourceS], [W1].[SignalS], [W1].[WaitCount], [W1].[Percentage]
 HAVING SUM ([W2].[Percentage]) - [W1].[Percentage] < 95; -- percentage threshold
+OPTION (RECOMPILE);		  
 GO
 
 /*
