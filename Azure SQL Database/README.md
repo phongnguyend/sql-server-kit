@@ -2,6 +2,10 @@
 
 - How backups are handled
 - Improved security features
+  + Dynamic Data Masking
+  + Row-Level Security
+  + Always Encrypted
+  + Transparent Data Encryption
 - Geo-replication
 - Elastic database pools
 - In-memory support for Premium tier
