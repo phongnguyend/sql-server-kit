@@ -1,4 +1,4 @@
-## General Features
+## General Features:
 
 - How backups are handled
 - Improved security features
@@ -12,7 +12,7 @@
 - Query Store
 - Index Advisor
 
-## Unsupported Features
+## Unsupported Features:
 
 - SQL Server Agent
 - Database Mail
@@ -27,3 +27,21 @@
   + Log Shipping
   + Database Mirroring
   + Availability Groups
+
+## Migrations:
+- Data Migration Assistant
+- SSMS: Export Data-tier Application
+- SSMS: Deploy Database to Microsoft Azure SQL Database
+
+## Hybrid Solutions:
+- Backup to Url
+- Stretch Database
+- Azure VM
+- Managed Backups
+- Migrations:
+  + Backup to Url/ Restore from Url
+  + Log Shipping
+  + Database Mirroring
+  + Availability Groups
+  + Transactional Replication
+
