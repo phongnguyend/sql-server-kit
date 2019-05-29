@@ -1,4 +1,4 @@
-## Azure SQL Database Features
+## General Features
 
 - How backups are handled
 - Improved security features
