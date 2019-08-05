@@ -57,7 +57,11 @@ Executed as user: XXX. Could not remove directory 'C:\XXX\unc\XXX_PROD_PUBLICATI
 [SQLSTATE 42000] (Error 20015)  ...
 Could not clean up the distribution transaction tables. [SQLSTATE 01000] (Message 14152).  The step failed.
 
-+ Remove the folder manually.
++ Reference these links:
+  + [Distribution Cleanup failed due to security reasons](https://learnsql.wordpress.com/2012/10/15/distribution-cleanup-failed-due-to-security-reasons/)
+  + [Distribution Agent fails with “Could not remove directory” error](https://repltalk.com/2011/01/02/distribution-agent-fails-with-could-not-remove-directory-error/)
+  + [Distribution Cleanup Job And Xp_cmdshell](https://blog.pythian.com/distribution-cleanup-job-cant-delete-folder/)
++ If still struggling, remove the folder manually.
 + Check number of records: sp_spaceused [MSrepl_commands]
   + If the number is too big ( > 10.000.000 rows) we should jump to "Truncate [MSrepl_commands]" step.
   + Otherwise execute: EXEC dbo.sp_MSdistribution_cleanup @min_distretention = 0, @max_distretention = 72
