@@ -63,10 +63,10 @@ Could not clean up the distribution transaction tables. [SQLSTATE 01000] (Messag
   + [Distribution Cleanup Job And Xp_cmdshell](https://blog.pythian.com/distribution-cleanup-job-cant-delete-folder/)
 + If still struggling, remove the folder manually.
 + Check number of records: 
-> > sp_spaceused [MSrepl_commands]
+  > sp_spaceused [MSrepl_commands]
   + If the number is too big ( > 10.000.000 rows) we should jump to "Truncate [MSrepl_commands]" step.
   + Otherwise execute: 
-> > EXEC dbo.sp_MSdistribution_cleanup @min_distretention = 0, @max_distretention = 72
+  > EXEC dbo.sp_MSdistribution_cleanup @min_distretention = 0, @max_distretention = 72
 
 ### Check xp_cmdshell is enabled:
 ```sql
