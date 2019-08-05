@@ -89,3 +89,10 @@ GO
 https://www.sqlservercentral.com/articles/process-to-truncate-transaction-log-of-replicated-database
 
 If see: "The initial snapshot for publication 'XYZ' is not yet available." should find and start the job: Snapshot Agent
+
+### Troubleshooting Scenarios:
+[The subscription(S) have been marked inactive and must be reinitialized.](https://www.msqlserver.net/2015/03/the-subscriptions-have-been-marked.html?m=1)
+
+[Replication Max Text Length](https://www.sqlservercentral.com/blogs/replication-max-text-length)
+
+[Configure the max text repl size Server Configuration Option](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure-the-max-text-repl-size-server-configuration-option?view=sql-server-2017)
