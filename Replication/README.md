@@ -21,6 +21,9 @@ GO
 
 ### Check Distribution Database:
 ```sql
+EXEC sp_helpfile;
+EXEC sp_spaceused;
+
 sp_spaceused [MSrepl_commands]
 GO
 
