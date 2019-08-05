@@ -53,7 +53,7 @@ ORDER BY p.retention
 
 ### Check Distribution Clean Up Job:
 
-Executed as user: XXX. Could not remove directory 'C:\XXX\unc\XXX_PROD_PUBLICATION\20190801073125\'. Check the security context of xp_cmdshell and close other processes that may be accessing the directory.
+> Executed as user: XXX. Could not remove directory 'C:\XXX\unc\XXX_PROD_PUBLICATION\20190801073125\'. Check the security context of xp_cmdshell and close other processes that may be accessing the directory.
 [SQLSTATE 42000] (Error 20015)  ...
 Could not clean up the distribution transaction tables. [SQLSTATE 01000] (Message 14152).  The step failed.
 
@@ -62,9 +62,11 @@ Could not clean up the distribution transaction tables. [SQLSTATE 01000] (Messag
   + [Distribution Agent fails with “Could not remove directory” error](https://repltalk.com/2011/01/02/distribution-agent-fails-with-could-not-remove-directory-error/)
   + [Distribution Cleanup Job And Xp_cmdshell](https://blog.pythian.com/distribution-cleanup-job-cant-delete-folder/)
 + If still struggling, remove the folder manually.
-+ Check number of records: sp_spaceused [MSrepl_commands]
++ Check number of records: 
+> > sp_spaceused [MSrepl_commands]
   + If the number is too big ( > 10.000.000 rows) we should jump to "Truncate [MSrepl_commands]" step.
-  + Otherwise execute: EXEC dbo.sp_MSdistribution_cleanup @min_distretention = 0, @max_distretention = 72
+  + Otherwise execute: 
+> > EXEC dbo.sp_MSdistribution_cleanup @min_distretention = 0, @max_distretention = 72
 
 ### Check xp_cmdshell is enabled:
 ```sql
