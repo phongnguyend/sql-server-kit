@@ -16,3 +16,19 @@
 
 [SQL Server: Logging, Recovery, and the Transaction Log](https://www.pluralsight.com/courses/sqlserver-logging)
 
+## Troubleshooting Scripts:
+[Backup Percentage](https://github.com/phongnguyend/sql-server-kit/blob/master/Backup%20Types%20%26%20Recovery%20Models/Backup%20Percentage.sql)
+
+[Database Properties](https://github.com/phongnguyend/sql-server-kit/blob/master/Backup%20Types%20%26%20Recovery%20Models/Database%20Properties.sql)
+
+[Database Size History](https://github.com/phongnguyend/sql-server-kit/blob/master/Backup%20Types%20%26%20Recovery%20Models/Database%20Size%20History.sql)
+
+[File Sizes and Space](https://github.com/phongnguyend/sql-server-kit/blob/master/Backup%20Types%20%26%20Recovery%20Models/File%20Sizes%20and%20Space.sql)
+
+[Getting VLF Counts](https://github.com/phongnguyend/sql-server-kit/blob/master/Backup%20Types%20%26%20Recovery%20Models/Getting%20VLF%20Counts.sql)
+
+[IO Latencies by Database File](https://github.com/phongnguyend/sql-server-kit/blob/master/Backup%20Types%20%26%20Recovery%20Models/IO%20Latencies%20by%20Database%20File.sql)
+
+[IO Stats By File](https://github.com/phongnguyend/sql-server-kit/blob/master/Backup%20Types%20%26%20Recovery%20Models/IO%20Stats%20By%20File.sql)
+
+[Recent Full Backups](https://github.com/phongnguyend/sql-server-kit/blob/master/Backup%20Types%20%26%20Recovery%20Models/Recent%20Full%20Backups.sql)
