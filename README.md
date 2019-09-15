@@ -3,6 +3,13 @@
 
 [What's new in SQL Server 2016](https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2016)
 
+### Product Lifecycle:
+- [SQL Server 2014](https://support.microsoft.com/en-us/lifecycle/search?alpha=SQL%20Server%202014)
+- [SQL Server 2016](https://support.microsoft.com/en-us/lifecycle/search?alpha=SQL%20Server%202016)
+- [SQL Server 2017](https://support.microsoft.com/en-us/lifecycle/search?alpha=SQL%20Server%202017)
+
+[Announcing the Modern Servicing Model for SQL Server](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/)
+
 ### Database Management Tools:
 1. [SQL Search](https://www.red-gate.com/products/sql-development/sql-search/)
 2. [SQL Code Guard](https://www.red-gate.com/products/sql-development/sql-code-guard/)
