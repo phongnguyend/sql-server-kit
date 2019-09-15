@@ -1,7 +1,7 @@
 ### What's new:
-[What's new in SQL Server 2017](https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2017)
-
-[What's new in SQL Server 2016](https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2016)
+- [What's new in SQL Server 2019](https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-ver15)
+- [What's new in SQL Server 2017](https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2017)
+- [What's new in SQL Server 2016](https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2016)
 
 ### Product Lifecycle:
 - [SQL Server 2014](https://support.microsoft.com/en-us/lifecycle/search?alpha=SQL%20Server%202014)
