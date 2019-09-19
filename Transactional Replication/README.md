@@ -99,3 +99,22 @@ If see: "The initial snapshot for publication 'XYZ' is not yet available." shoul
 > Error Description: Length of LOB data (65754) to be replicated exceeds configured maximum 65536. Use the stored procedure sp_configure to increase the configured maximum value for max text repl size option, which defaults to 65536. A configured value of -1 indicates no limit
 
 [Configure the max text repl size Server Configuration Option](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure-the-max-text-repl-size-server-configuration-option?view=sql-server-2017)
+
+### Move distribution database to another Drive:
+```sql
+-- Check the current location
+SELECT name, physical_name AS CurrentLocation, state_desc  
+FROM sys.master_files  
+WHERE database_id = DB_ID(N'distribution');
+GO
+
+-- Set the database offline
+ALTER DATABASE distribution SET OFFLINE
+
+-- Copy the data and log file of the distribution database to the new location.
+ALTER DATABASE distribution MODIFY FILE ( NAME = distribution , FILENAME = 'E:\MSSQL\DATA\distribution.mdf')
+ALTER DATABASE distribution MODIFY FILE ( NAME = distribution_log , FILENAME = 'E:\MSSQL\DATA\distribution.ldf')
+
+-- Bring the database online
+ALTER DATABASE distribution SET ONLINE
+```
