@@ -139,13 +139,14 @@ GROUP BY DB_NAME(eS.database_id)
 	, ec.local_tcp_port
 ORDER BY [database_name], is_user_process, session_id;
 
--- Set the database offline
+-- Set the database OFFLINE
+-- You might need to stop SQL Server Agent before doing this
 ALTER DATABASE distribution SET OFFLINE
 
 -- Copy the data and log file of the distribution database to the new location.
 ALTER DATABASE distribution MODIFY FILE ( NAME = distribution , FILENAME = 'E:\MSSQL\DATA\distribution.mdf')
 ALTER DATABASE distribution MODIFY FILE ( NAME = distribution_log , FILENAME = 'E:\MSSQL\DATA\distribution.ldf')
 
--- Bring the database online
+-- Bring the database ONLINE
 ALTER DATABASE distribution SET ONLINE
 ```
