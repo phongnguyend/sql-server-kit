@@ -100,7 +100,7 @@ If see: "The initial snapshot for publication 'XYZ' is not yet available." shoul
 
 [Configure the max text repl size Server Configuration Option](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure-the-max-text-repl-size-server-configuration-option?view=sql-server-2017)
 
-### Move distribution database to another Drive:
+# Move distribution database to another Drive:
 ```sql
 -- Check the current location
 SELECT name, physical_name AS CurrentLocation, state_desc  
@@ -150,3 +150,27 @@ ALTER DATABASE distribution MODIFY FILE ( NAME = distribution_log , FILENAME = '
 -- Bring the database ONLINE
 ALTER DATABASE distribution SET ONLINE
 ```
+
+# Add new article to existing publication:
+- [Add new article to existing publication for SQL Server Transactional Replication](https://www.mssqltips.com/sqlservertip/5704/add-new-article-to-existing-publication-for-sql-server-transactional-replication/)
+- [Adding a new articles to a existing transactional replication without snapshot of entire articles](https://medium.com/geopits/adding-a-new-articles-to-a-existing-transactional-replication-without-snapshot-of-entire-articles-3d1af1d9b587)
+```sql
+select immediate_sync,allow_anonymous,* from distribution.dbo.MSpublications
+
+EXEC sp_helpsubscription
+GO
+
+EXEC sp_changepublication
+@publication = 'Publication Name',
+@property = N'allow_anonymous',
+@value = 'False'
+GO
+EXEC sp_changepublication
+@publication = 'Publication Name',
+@property = N'immediate_sync',
+@value = 'False'
+GO
+
+```
+- [Add article to transactional publication without generating new snapshot](https://dba.stackexchange.com/questions/12725/add-article-to-transactional-publication-without-generating-new-snapshot)
+- [Limit snapshot size when adding new article to SQL Server replication](https://www.mssqltips.com/sqlservertip/2502/limit-snapshot-size-when-adding-new-article-to-sql-server-replication/)
