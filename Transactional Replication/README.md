@@ -19,6 +19,8 @@ ORDER BY [Table Name]
 GO
 ```
 
+[Download .bat files](compare%20tables%20and%20rows%20count) to run and compare automatically.
+
 ### Check Distribution Database:
 ```sql
 EXEC sp_helpfile;
