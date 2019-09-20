@@ -108,6 +108,37 @@ FROM sys.master_files
 WHERE database_id = DB_ID(N'distribution');
 GO
 
+-- Check opening sessions to the database
+SELECT DB_NAME(eS.database_id) AS [database_name]
+	, eS.is_user_process
+	, eS.session_id
+	, eS.host_name
+	, eS.program_name
+	, es.login_name
+	, es.original_login_name
+	, es.open_transaction_count as total_open_transactions
+	, ec.client_net_address
+	, ec.client_tcp_port
+	, ec.local_net_address
+	, ec.local_tcp_port
+	, count(ec.connection_id) as total_connections
+FROM sys.dm_exec_sessions eS 
+JOIN sys.dm_exec_connections eC on eC.session_id = es.session_id
+WHERE DB_NAME(eS.database_id) = 'distribution'
+GROUP BY DB_NAME(eS.database_id)
+	, eS.is_user_process
+	, eS.session_id
+	, eS.host_name
+	, eS.program_name
+	, es.login_name
+	, es.original_login_name
+	, es.open_transaction_count
+	, ec.client_net_address
+	, ec.client_tcp_port
+	, ec.local_net_address
+	, ec.local_tcp_port
+ORDER BY [database_name], is_user_process, session_id;
+
 -- Set the database offline
 ALTER DATABASE distribution SET OFFLINE
 
