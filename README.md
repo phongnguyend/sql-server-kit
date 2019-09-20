@@ -22,9 +22,10 @@
 9. [T-SQL Formatter](http://poorsql.com/)
 
 ### Developments & Migrations:
-1. [SqlPackage.exe](https://docs.microsoft.com/en-us/sql/tools/sqlpackage)
-2. [SQL Server Migration Assistant](https://docs.microsoft.com/en-us/sql/ssma/sql-server-migration-assistant)
-3. [Data Migration Assistant](https://docs.microsoft.com/en-us/sql/dma/dma-overview)
+- [sqlcmd](https://docs.microsoft.com/en-us/sql/tools/sqlcmd-utility)
+- [SqlPackage.exe](https://docs.microsoft.com/en-us/sql/tools/sqlpackage)
+- [SQL Server Migration Assistant](https://docs.microsoft.com/en-us/sql/ssma/sql-server-migration-assistant)
+- [Data Migration Assistant](https://docs.microsoft.com/en-us/sql/dma/dma-overview)
 
 ### Hardware Identification:
 1. [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
