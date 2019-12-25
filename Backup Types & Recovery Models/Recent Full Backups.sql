@@ -5,8 +5,12 @@ CONVERT (BIGINT, bs.compressed_backup_size / 1048576 ) AS [Compressed Backup Siz
 CONVERT (NUMERIC (20,2), (CONVERT (FLOAT, bs.backup_size) /
 CONVERT (FLOAT, bs.compressed_backup_size))) AS [Compression Ratio], 
 DATEDIFF (SECOND, bs.backup_start_date, bs.backup_finish_date) AS [Backup Elapsed Time (sec)],
-bs.backup_finish_date AS [Backup Finish Date]
+bs.backup_finish_date AS [Backup Finish Date],
+bs.is_copy_only,
+f.logical_device_name, 
+f.physical_device_name
 FROM msdb.dbo.backupset AS bs WITH (NOLOCK)
+INNER JOIN msdb.dbo.backupmediafamily f ON f.media_set_id = bs.media_set_id 
 WHERE DATEDIFF (SECOND, bs.backup_start_date, bs.backup_finish_date) > 0 
 AND bs.backup_size > 0
 AND bs.type = 'D' -- Change to L if you want Log backups
