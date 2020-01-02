@@ -1,0 +1,1 @@
+[SQL Server Diagnostic Information Queries](https://www.sqlskills.com/blogs/glenn/category/dmv-queries/)
