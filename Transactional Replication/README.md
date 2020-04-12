@@ -176,3 +176,8 @@ GO
 ```
 - [Add article to transactional publication without generating new snapshot](https://dba.stackexchange.com/questions/12725/add-article-to-transactional-publication-without-generating-new-snapshot)
 - [Limit snapshot size when adding new article to SQL Server replication](https://www.mssqltips.com/sqlservertip/2502/limit-snapshot-size-when-adding-new-article-to-sql-server-replication/)
+
+# Reinitialize Subscription
+- ![alt text](reinitialize.png)
+- ![alt text](view-snapshot-agent-status.png)
+- ![alt text](view-synchronization-status.png)
