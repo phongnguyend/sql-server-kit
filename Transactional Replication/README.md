@@ -23,6 +23,12 @@ GO
 
 ### Check Distribution Database:
 ```sql
+-- Select distributions database
+select d.*, p.*
+from msdb.dbo.MSdistpublishers p
+join msdb.dbo.MSdistributiondbs d on p.distribution_db = d.name
+
+-- Use [distribution_db_name]
 EXEC sp_helpfile;
 EXEC sp_spaceused;
 
@@ -43,6 +49,7 @@ srv.srvname publication_server
 , p.retention
 , ss.srvname subscription_server
 , s.subscriber_db
+, da.subscriber_login
 from MSArticles a 
 join MSpublications p on a.publication_id = p.publication_id
 join MSsubscriptions s on p.publication_id = s.publication_id
