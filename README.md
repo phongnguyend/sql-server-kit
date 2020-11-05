@@ -20,6 +20,7 @@
 7. [SQL Server Data Tools (SSDT) (Schema Compare, Data Compare, ...)](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt)
 8. [SentryOne Plan Explorer - SQL Server Query Tuning](https://www.sentryone.com/plan-explorer)
 9. [T-SQL Formatter](http://poorsql.com/)
+10. [SQL Server (mssql) | VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql)
 
 ### Developments & Migrations:
 1. [SqlPackage.exe](https://docs.microsoft.com/en-us/sql/tools/sqlpackage)
