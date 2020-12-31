@@ -1,1 +1,6 @@
-
+- [What is an Always On availability group? - SQL Server Always On | Microsoft Docs](https://docs.microsoft.com/en-us/sql/database-engine/availability-groups/windows/overview-of-always-on-availability-groups-sql-server?view=sql-server-ver15)
+- [What is SQL Server AlwaysOn?](https://www.mssqltips.com/sqlservertip/4717/what-is-sql-server-alwayson/)
+- [AlwaysOn Availability Groups, Listener, Named Instances, Port Numbers, etc. – Cloud Data Architect](http://www.dataarchitect.cloud/alwayson-availability-groups-listener-named-instances-port-numbers-etc/)
+- [An overview of distributed SQL Server Always On Availability Groups](https://www.sqlshack.com/an-overview-of-distributed-sql-server-always-on-availability-groups/)
+- [How to architect a hybrid Microsoft SQL Server solution using distributed availability groups | AWS Database Blog](https://aws.amazon.com/blogs/database/how-to-architect-a-hybrid-microsoft-sql-server-solution-using-distributed-availability-groups/)
+- [Multi-region SQL Server deployment using distributed availability groups | AWS Database Blog](https://aws.amazon.com/blogs/database/multi-region-sql-server-deployment-using-distributed-availability-groups/)
