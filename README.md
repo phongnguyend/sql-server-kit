@@ -4,9 +4,12 @@
 - [What's new in SQL Server 2016](https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2016)
 
 ### Product Lifecycle:
-- [SQL Server 2014](https://support.microsoft.com/en-us/lifecycle/search?alpha=SQL%20Server%202014)
-- [SQL Server 2016](https://support.microsoft.com/en-us/lifecycle/search?alpha=SQL%20Server%202016)
-- [SQL Server 2017](https://support.microsoft.com/en-us/lifecycle/search?alpha=SQL%20Server%202017)
+| Version  | Start Date | Mainstream End Date | Extended End Date |
+| -------- | ---------- | ------------------- | ----------------- |
+| [SQL Server 2014](https://docs.microsoft.com/en-us/lifecycle/products/sql-server-2014) | 06/05/2014 | 07/09/2019 | 07/09/2024 |
+| [SQL Server 2016](https://docs.microsoft.com/en-us/lifecycle/products/sql-server-2016) | 06/01/2016 | 07/13/2021 | 07/14/2026 |
+| [SQL Server 2017](https://docs.microsoft.com/en-us/lifecycle/products/sql-server-2017) | 09/29/2017 | 10/11/2022 | 10/12/2027 |
+| [SQL Server 2019](https://docs.microsoft.com/en-us/lifecycle/products/sql-server-2019) | 11/04/2019 | 01/07/2025 | 01/08/2030 |
 
 [Announcing the Modern Servicing Model for SQL Server](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/)
 
