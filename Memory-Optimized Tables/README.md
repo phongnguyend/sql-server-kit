@@ -1,0 +1,1 @@
+- [Introduction to Memory-Optimized Tables - SQL Server | Microsoft Docs](https://docs.microsoft.com/en-us/sql/relational-databases/in-memory-oltp/introduction-to-memory-optimized-tables)
