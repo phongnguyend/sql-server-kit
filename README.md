@@ -1,4 +1,5 @@
 ### What's new:
+- [What's new in SQL Server 2022](https://learn.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2022)
 - [What's new in SQL Server 2019](https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-ver15)
 - [What's new in SQL Server 2017](https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2017)
 - [What's new in SQL Server 2016](https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2016)
@@ -6,10 +7,12 @@
 ### Product Lifecycle:
 | Version  | Start Date | Mainstream End Date | Extended End Date |
 | -------- | ---------- | ------------------- | ----------------- |
-| [SQL Server 2014](https://docs.microsoft.com/en-us/lifecycle/products/sql-server-2014) | 06/05/2014 | 07/09/2019 | 07/09/2024 |
-| [SQL Server 2016](https://docs.microsoft.com/en-us/lifecycle/products/sql-server-2016) | 06/01/2016 | 07/13/2021 | 07/14/2026 |
-| [SQL Server 2017](https://docs.microsoft.com/en-us/lifecycle/products/sql-server-2017) | 09/29/2017 | 10/11/2022 | 10/12/2027 |
-| [SQL Server 2019](https://docs.microsoft.com/en-us/lifecycle/products/sql-server-2019) | 11/04/2019 | 01/07/2025 | 01/08/2030 |
+| [SQL Server 2022](https://docs.microsoft.com/en-us/lifecycle/products/sql-server-2022) | Nov 16, 2022 | Jan 11, 2028 | Jan 11, 2033 |
+| [SQL Server 2019](https://docs.microsoft.com/en-us/lifecycle/products/sql-server-2019) | Nov 4, 2019 | Feb 28, 2025 | Jan 8, 2030 |
+| [SQL Server 2017](https://docs.microsoft.com/en-us/lifecycle/products/sql-server-2017) | Sep 29, 2017 | Oct 11, 2022 | Oct 12, 2027 |
+| [SQL Server 2016](https://docs.microsoft.com/en-us/lifecycle/products/sql-server-2016) | Jun 1, 2016	| Jul 13, 2021 | Jul 14, 2026 |
+| [SQL Server 2014](https://docs.microsoft.com/en-us/lifecycle/products/sql-server-2014) | Jun 5, 2014 | Jul 9, 2019 | Jul 9, 2024 |
+
 
 [Announcing the Modern Servicing Model for SQL Server](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/)
 
