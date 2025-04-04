@@ -1,0 +1,6 @@
+- [Quick API Endpoints Using Data API Builder - YouTube](https://www.youtube.com/watch?v=XQRO_uoGhp4)
+- [Build REST & GraphQL APIs in Seconds with VS Code & Data API Builder - YouTube](https://www.youtube.com/watch?v=KcFFRbITAAI)
+- [Deploy Data API builder in Azure Container Apps - YouTube](https://www.youtube.com/watch?v=RfyBT6maQd0)
+- [Unlocking Database Conversations: Semantic Kernel and Data API Builder in Action - YouTube](https://www.youtube.com/watch?v=UTl4JVE4sLE)
+- [Connect your Web App Directly to a Database - YouTube](https://www.youtube.com/watch?v=vNzLSH3VbDc)
+- [Secure APIs with Data API Builder, Keycloak, and SQL Server - Azure SQL Devs’ Corner](https://devblogs.microsoft.com/azure-sql/secure-apis-with-data-api-builder-keycloak-and-sql-server/)
