@@ -49,3 +49,6 @@
 ### Memory Benchmarks:
 1. [Geekbench](https://www.geekbench.com/)
 2. [SiSoftware Sandra](https://www.sisoftware.co.uk/benchmarking-101/)
+
+### SQL Conf:
+- [SQL Conf() Spring 2025 Developer Marathon - YouTube](https://www.youtube.com/playlist?list=PLI7iePan8aH5QPlBVaaJ8mIbXYwfX7XL2)
